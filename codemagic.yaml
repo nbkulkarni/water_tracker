@@ -24,6 +24,3 @@ workflows:
       email:
         recipients:
           - bharadwajnk6@gmail.com
-        notify_on_build_start: false
-        notify_on_build_success: true
-        notify_on_build_failure: true
