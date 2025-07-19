@@ -6,7 +6,7 @@ workflows:
       vars:
         JAVA_VERSION: 17
       android_signing:
-        - keystore_reference
+        - Nikapp
       groups:
         - google_credentials
     scripts:
