@@ -17,7 +17,9 @@ workflows:
           export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
           export PATH=$JAVA_HOME/bin:$PATH
       - name: Build APK
-        script: ./gradlew assembleDebug
+        script: |
+        chmod +X ./gradlew
+        ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
     publishing:
