@@ -18,7 +18,7 @@ workflows:
           export PATH=$JAVA_HOME/bin:$PATH
       - name: Build APK
         script: |
-        chmod +X ./gradlew
+        chmod +x ./gradlew
         ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
