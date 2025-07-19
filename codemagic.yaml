@@ -16,6 +16,12 @@ workflows:
           sudo apt-get install openjdk-17-jdk
           export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
           export PATH=$JAVA_HOME/bin:$PATH
+      
+      - name: Install Gradle
+        script: |
+          sudo apt-get update
+          sudo apt-get install gradle
+      
       - name: Build APK
         script: |
           chmod +x ./gradlew
