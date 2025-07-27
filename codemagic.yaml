@@ -21,7 +21,7 @@ workflows:
         script: |
           chmod +x ./gradlew
           ./gradlew build
-          ./gradlew assembleDebug
+          ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/**/*.apk
     publishing:
